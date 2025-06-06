@@ -23,11 +23,11 @@ Together, these modules replicate the functionality described in the PiDAR paper
 
 ```
 
-yolo\_pipeline/
+PIDAR/
 ├── inputs/                    ← User‐provided data and config
 │   ├── train/                 ← YOLOv8 “train” set (images + labels)
 │   ├── valid/                 ← YOLOv8 “valid” set (images + labels)
-│   ├── test\_images/           ← Images for inference (no labels)
+│   ├── test_images/           ← Images for inference (no labels)
 │   └── data.yaml              ← YOLOv8 data configuration file
 │
 ├── outputs/                   ← Pipeline outputs
@@ -40,15 +40,13 @@ yolo\_pipeline/
 ├── setup.sh                   ← Installs Ultralytics and other requirements
 │
 └── src/                       ← All Python source modules
-├── config.py              ← Configuration constants (paths, hyperparameters)
-├── data\_prep.py           ← Verifies that inputs/ exists and is correctly structured
-├── train.py               ← Trains YOLOv8 over multiple learning rates
-├── predict.py             ← Runs YOLOv8 inference on test\_images/
-├── archive.py             ← Archives “runs/detect/predict” outputs with timestamp
-└── main.py                ← Top‐level CLI: verify → train → predict → archive
+    ├── config.py              ← Configuration constants (paths, hyperparameters)
+    ├── data_prep.py           ← Verifies that inputs/ exists and is correctly structured
+    ├── train.py               ← Trains YOLOv8 over multiple learning rates
+    ├── predict.py             ← Runs YOLOv8 inference on test\_images/
+    ├── archive.py             ← Archives “runs/detect/predict” outputs with timestamp
+    └── main.py                ← Top‐level CLI: verify → train → predict → archive
 ```
-
-
 ---
 
 ## Usage Instructions
