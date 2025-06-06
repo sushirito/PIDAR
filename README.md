@@ -1,7 +1,5 @@
 # PIDAR
 
-# YOLOv8 Marine Debris Detection Pipeline
-
 ## Publication
 
 View the original publication “Tackling Marine Pollution with IoT and Conditioned Diffusion” at the [2024 IEEE International Conference on Artificial Intelligence in Engineering and Technology (IICAIET)](https://ieeexplore.ieee.org/document/10730236).
@@ -55,8 +53,8 @@ PIDAR/
 
 1. **Clone this repository** and enter its root directory:
    ```bash
-   git clone https://github.com/YourUsername/yolo_pipeline.git
-   cd yolo_pipeline
+   git clone https://github.com/sushirito/PIDAR.git
+   cd PIDAR
    chmod +x setup.sh
    ```
 
